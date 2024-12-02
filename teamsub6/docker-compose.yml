@@ -13,3 +13,6 @@ services: # 아래는 서비스 정의
    backapp:                   # service2의 명칭  
       # 서비스 빌드를 위한 정의 내용
       build: ./BackEnd
+      image: ${DOCKER_USR}/backapp
+      ports:
+      - "8080:8080"
